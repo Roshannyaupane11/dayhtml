@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid</title>
+</head>
+<style>
+.container{
+    display: grid;
+    grid-gap:  green;
+    grid-template-areas: "navbar navbar navbar navbar"
+    "section section section aside";
+   
+
+}
+.navbar{
+    grid-area: navbar;
+    border: 2px solid green;
+    background-color: beige;
+}
+
+.section{
+    grid-area: section;
+    border: 2px solid green;
+    background-color: aqua;
+}
+
+.aside{
+    grid-area: aside;
+    border: 2px solid green;
+    background-color: blanchedalmond;
+}
+
+
+
+
+</style>
+<body>
+  <div class="container">
+    <div class="navbar">
+Home  about   services contactus
+    </div>
+    <div class="section">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima delectus omnis vel suscipit quo odio, tempore saepe quas, adipisci et consequatur tenetur iure sit dicta vero blanditiis culpa iusto.
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor omnis itaque eius quisquam, esse dolore nesciunt nemo laborum assumenda iste quibusdam, officia repellat! Architecto vel odit aperiam dolores quas incidunt.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet tempore non dolorum incidunt nobis? Quos enim est quia, eligendi nam, fugit architecto ratione iste, excepturi rerum porro repellendus amet!
+
+    </div>
+    <div class="aside">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus rerum incidunt dolore consequuntur sed? Repellendus distinctio numquam culpa magnam doloremque id nobis at, sapiente et perferendis, perspiciatis totam necessitatibus laborum.loreem
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptas rem, hic, harum delectus quod nihil mollitia ducimus aspernatur molestias eius excepturi velit magni nesciunt beatae? Rerum, excepturi. Doloremque, beatae.
+    </div>
+  </div>
+    
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title> css Variable / custom properties</title>
+</head>
+<style>
+
+    :root { 
+        --primary-color: aqua;
+        --danger-color: red;
+        --maxw: 233px;}
+.box{    --box-color: aqua;
+    width: 200px;
+    height: 200px;
+    background-color: var( --primary-color);
+    border: 2px solid var( --danger-color);
+    box-shadow: 3px 2px  var(--box-color);
+ margin: 10px;
+}
+.container{
+    display: flex;
+    --box-color: rgb(205, 227, 227);
+    background-color: var(--box-color);
+
+   
+
+}
+
+
+</style>
+<body>
+    <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</body>
+</html>

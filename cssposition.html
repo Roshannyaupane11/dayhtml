@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION</title>
+</head>
+<style>
+
+    .container{
+        background-color: rgb(206, 201, 221);
+        border: 2px solid rgb(237, 186, 239);
+        height: 1300px;
+
+    }
+    .box{
+        display: inline-block;
+        border: 2px solid red;
+        height: 100px;
+        width: 150px;
+        margin: 2px;
+    }
+  
+    #box4{
+     position: fixed;
+      right: 30px;
+      text-align: center;
+      color: rgb(20, 20, 20);    
+}
+#box{
+    position: sticky;
+    top: 3px;
+}
+
+
+</style>
+<body>
+    <div class="container">
+   <div class="box" id="box1"></div>
+   <div class="box" id="box2"></div>
+   <div class="box" id="box3"></div>
+   <div class="box" id="box4"> positon fixed</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transition </title>
+</head><style>
+
+*{
+    margin: 0px;
+padding: 0px;
+}
+
+.container{
+    background-color: bisque;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+   display: flex;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+transition: all 1s ease-in-out;
+
+
+
+}
+
+.box:hover{
+    transform: rotate(360deg); 
+    /* transform: skew(180deg); */
+    /* transform: scale(2); */
+   /* transform: translateX(40px); */
+   /* transform: translateY(40px); */
+
+}
+
+
+
+
+
+
+</style>
+<body>
+  <div class="container">
+<div class="box">
+
+</div>
+
+  </div>
+    
+
+
+</body>
+</html>

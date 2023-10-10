@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css visibility and /z-index</title>
+</head>
+<style>
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#box1{
+    background-color: aqua;
+    position: relative;
+    top: 40px;
+    z-index: 35px;
+}
+#box2{
+    /*visibility: hidden; hide the box and still reserve the space */
+    /*display: none; it will delet the box*/
+    background-color: rgb(92, 163, 38);
+    position: relative;
+    top: 14px;
+    /*z-idex is only use for position: relative ,fixed,absolute or sticky;*/
+    z-index: -30px;
+}
+#box3{
+    background-color: rgb(203, 126, 26);
+}
+#box4{
+    background-color: rgb(234, 39, 71);
+}
+
+
+</style>
+<body>
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+    
+
+</body>
+</html>
